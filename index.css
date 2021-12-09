@@ -1,0 +1,13 @@
+.celda{
+    padding: 20px;
+}
+.bomb{
+    background-color: firebrick;
+    padding: 15px;
+
+}
+.clicked{
+    background-color: #444444;
+    color: white;
+    padding: 15px;
+}

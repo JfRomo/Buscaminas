@@ -5,10 +5,17 @@ class Celda {
     this.hasBomb = hasBomb;
     this.cover = true;
   }
-  unCover() {
+  unCover(bombs) {
     this.cover = false;
+    const boton = document.getElementById(`${this.x},${this.y}`);
+    boton.disabled = true;
     if (this.hasBomb === true) {
-      alert("Ti moriste wey");
+      boton.textContent = "X";
+      boton.classList.add("bomb");
+      //alert("Ti moriste wey");
+    } else {
+      boton.classList.add("clicked");
+      if (bombs > 0) boton.textContent = bombs;
     }
   }
 }
