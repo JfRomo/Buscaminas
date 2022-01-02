@@ -12,12 +12,12 @@ class Celda {
     const boton = document.getElementById(`${this.x},${this.y}`);
     boton.disabled = true;
     if (this.hasBomb === true) {
-      boton.textContent = "X";
+      boton.innerHTML= "&#128163";
       boton.classList.add("bomb");
       this.alive = false
       //alert("Ti moriste wey");
     } else {
-      boton.classList.add("clicked");
+      boton.classList.add("clicked", `bombs${bombs}`);
       if (bombs > 0) boton.textContent = bombs;
     }
   }
@@ -25,7 +25,7 @@ class Celda {
     if (this.cover == true) {
       this.flagged = true;
       const boton = document.getElementById(`${this.x},${this.y}`);
-      boton.textContent = "F";
+      boton.innerHTML = "&#128681";
       boton.classList.add("flag");
     }
   }

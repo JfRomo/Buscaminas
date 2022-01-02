@@ -12,7 +12,7 @@ for (let p = 0; p < tablero.y; p++) {
   for (let i = 0; i < tablero.x; i++) {
     botones += `<button class="celda"id="${i},${p}"></button>`;
   }
-  templateTablero += `<p>
+  templateTablero += `<p class="cell">
           ${botones}
       </p>`;
 }

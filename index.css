@@ -1,13 +1,45 @@
-.celda{
-    padding: 20px;
+*{
+    box-sizing: border-box;
+}
+.cell{
+    display: flex;
+}
+p{
+    margin: 0px 0px;
+}
+button{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    margin: 0.5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.flag{
+    font-weight: normal;
 }
 .bomb{
-    background-color: firebrick;
-    padding: 15px;
+    background-color: rgb(255, 0, 0);
 
 }
 .clicked{
-    background-color: #444444;
-    color: white;
-    padding: 15px;
+    background-color: #919191;
+}
+.bombs1{
+    color: blue;
+}
+.bombs2{
+    color: green;
+}
+.bombs3{
+    color: red;
+}
+.bombs4{
+    color: darkred;
+}
+.bombs5{
+    color: rgb(66, 4, 4);
+}
+.bombs6{
+    color: black;
 }
