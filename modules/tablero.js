@@ -30,7 +30,11 @@ class Tablero {
         if (this.matriz[`${x + 1},${y + 1}`]?.hasBomb == true) bombs++;
       }
       celda.unCover(bombs);
-    }
+      if (celda?.hasBomb == true) {
+        alert("Has Muerto")
+        window.location.reload()
+      }
+    } 
   }
 
   #validate(bombs) {
@@ -80,7 +84,7 @@ class Tablero {
       celda.unFlag()
     }
   }
-  if () {
+  if (alive) {
     
   }
 }
